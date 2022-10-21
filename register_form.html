@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register form</title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<div class="form-container">
+
+   <form action="register_form.php" method="post">
+      <h3>register now</h3>
+      
+      <label for="name">Full name:</label>
+      <input type="text" name="name" required placeholder="enter your name">
+      <label for="email">Email:</label>
+      <input type="email" name="email" required placeholder="enter your email">
+      <label for="password">Password:</label>
+      <input type="password" name="password" required placeholder="enter your password">
+      <label for="cpassword">Confirm Password:</label>
+      <input type="password" name="cpassword" required placeholder="confirm your password">
+      <select name="user_type">
+         <option value="user">user</option>
+         <option value="admin">admin</option>
+      </select>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" placeholder="Date of Birth">
+      <label for="contact">Mobile No:</label>
+      <input type="phone" id="contact" name="contact" placeholder="Mobile Number">
+
+      <input type="submit" name="submit" value="register now" class="form-btn">
+      <p>already have an account? <a href="login_form.html">login now</a></p>
+   </form>
+
+</div>
+
+</body>
+</html>
